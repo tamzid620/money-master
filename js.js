@@ -91,7 +91,7 @@ document.getElementById('btn-save').addEventListener('click', function(){
     const savingAmountString = savingAmountElement.innerText;
     const savingAmount =  parseInt(savingAmountString);
 
-    if(balanceAmount > savingAmount){
+    if(balanceAmount < savingAmount){
         alert('You do not have enough suffucient balance');
         return;
     }
